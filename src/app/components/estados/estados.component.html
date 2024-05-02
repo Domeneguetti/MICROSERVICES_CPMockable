@@ -1,0 +1,22 @@
+<h2 style="padding: 30px; text-align: center;">Estados Brasileiros</h2>
+<div class="container text-center">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>UF</th>
+      </tr>
+    </thead>
+    <tbody>
+    @for (item of estados; track $index) {
+    <tr>
+      <td>{{item.id}}</td>
+      <td>{{item.nome}}</td>
+      <td>{{item.sigla}}</td>
+    </tr>
+    }
+  </tbody>
+</table>
+</div>
+
